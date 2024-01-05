@@ -18,8 +18,7 @@ def main():
     arguments = parser.parse_args()
 
     input_dll = arguments.input_dll
-    output_bin = input_dll.replace('.dll', '.bin')
-    output_bin = input_dll.replace('.exe', '.bin')
+    output_bin = input_dll.replace('.dll', '.bin').replace('.exe', '.bin')
 
 
     dll = open(arguments.input_dll, 'rb').read()
